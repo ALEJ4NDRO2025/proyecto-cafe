@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Ribeye&family=Righteous&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+  
+
+    background-color: #3b141c;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+
+
+ /* Header Styles */
+ header{
+    background: #3b141c;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ html{
+    scroll-behavior: smooth;
+ }
+
+ .container-header{
+    background: #3b141c;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+ }
+ .container-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+ }
+
+.container-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.container-header header nav ul li a{
+    text-align: center;
+    color: #ffffff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+   padding: 10px 16px;
+   border-radius: 30px;  
+
+}
+
+.container-header header nav ul li a:hover{
+    color: #3b141c;
+    background-color: #e58c3a;;
+}
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #b61c1c;
+    margin-left: auto;
+    border-radius: 20px;
+}
+
+.cafee{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  overflow:hidden;
+ height: 100vh;
+ padding-top: 20px;
+ box-sizing: border-box;
+ font-size: 30px;
+}
+
+.cafee .hero-text {
+  max-width: 50%;
+}
+
+.hero-text h3 {
+  font-size: 35px;
+  font-family: "Miniver", sans-serif;
+  color: #e58c3a;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.hero-text .btns  {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  background: #e58c3a;
+  color: #3b141c;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.btn:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.hero-image-container img {
+  max-width: 600px;
+}
