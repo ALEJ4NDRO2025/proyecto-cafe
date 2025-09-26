@@ -6,7 +6,7 @@ body{
     padding: 0;
   
 
-    background-color: #3b141c;
+    background-color: #201f1f;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,81 +82,118 @@ body{
     display: none;
 }
 
-.menu-icon{
-    display: none;
-    font-size: 24px;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* FONDO con degradado */
+  body {
+    min-height: vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  /* SECCIÓN CONTACTO */
+  .contact {
+    width: 100%;
+    max-width: 1100px;
+  
+  
+    padding: 40px;
+  }
+  
+  /* TÍTULO */
+  .contact h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* Línea decorativa */
+  .contact .linea {
+    width: 60px;
+    height: 3px;
+    background: #e6a400;
+    margin: 0 auto 30px;
+    border-radius: 2px;
+  }
+  
+  /* CONTENEDOR */
+  .contact-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* INFO DE CONTACTO */
+  .contact-info {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .contact-info p {
+    margin: 12px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #222;
+  }
+  
+  .contact-info i {
+    color: #5a1f1f;
+    font-size: 18px;
+  }
+  
+  /* FORMULARIO */
+  form {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  form textarea {
+    resize: none;
+    height: 120px;
+  }
+  
+  form button {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #4b1d1d;
+    color: #fff;
+    font-size: 16px;
     cursor: pointer;
-    color: #b61c1c;
-    margin-left: auto;
-    border-radius: 20px;
-}
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background: #2d1010;
+  }
 
-.cafee{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 50px;
-  overflow:hidden;
- height: 100vh;
- padding-top: 20px;
- box-sizing: border-box;
- font-size: 30px;
-}
-
-.cafee .hero-text {
-  max-width: 50%;
-}
-
-.hero-text h3 {
-  font-size: 35px;
-  font-family: "Miniver", sans-serif;
-  color: #e58c3a;
-  margin-bottom: 10px;
-}
-
-.hero-text h1 {
-  font-size: 46px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.hero-text p {
-  font-size: 18px;
-  margin-bottom: 25px;
-  line-height: 1.5;
-  color: #fff;
-}
-
-.hero-text .btns  {
-  display: flex;
-  gap: 15px;
-}
-
-.btn {
-  text-decoration: none;
-  background: #e58c3a;
-  color: #3b141c;
-  padding: 10px 16px;
-  border-radius: 25px;
-  font-weight: bold;
-  transition: 0.3s;
-  border: none;
-  margin: 10px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 20px;
-}
-
-.btn:hover {
-  color: #fff;
-  transform: scale(1.05);
-}
-
-.hero-image-container img {
-  max-width: 600px;
-}
-
-/* ====== MENÚ RESPONSIVE ====== */
+ /* ====== MENÚ RESPONSIVE ====== */
 
 .menu-icon {
   display: none;
@@ -248,4 +285,33 @@ body{
     height: auto;
     margin-top: 20px;
   }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  /* Para que los elementos ocupen todo el espacio entre sí */
+  justify-content: flex-start;
+  gap: 20px; /* para separación */
+  position: relative;
+}
+
+/* Logo: */
+.logo {
+  flex-shrink: 0; /* que no se reduzca */
+}
+
+/* El input checkbox oculto */
+#menu-toggle {
+  display: none;
+}
+
+/* Aquí ponemos la clave para el menú hamburguesa */
+.menu-icon {
+  margin-left: auto; /* empuja al máximo a la derecha */
+  cursor: pointer;
+  font-size: 28px;
+  color: #fff;
+  z-index: 100; /* para que quede por encima */
+  user-select: none;
 }
